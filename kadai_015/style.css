@@ -1,9 +1,8 @@
-html {
+body {
   font-family: "Arial", "Meiryo", sans-serif;
   font-size: 20px;
   text-align: center;
-  
-}  
+} 
 
 #basic > p { font-weight: bold; }
 
