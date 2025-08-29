@@ -8,12 +8,12 @@ p {
   font-size: 15px;
 }
 
-#main-visual>img {
+#main-visual > img {
   width: 100%;
 }
 
 /*================
-PC用のスタイル 
+PC用のスタイル
 =================*/
 @media screen and (min-width: 768px) {
   /* 横幅設定 */
@@ -37,125 +37,127 @@ PC用のスタイル
   }
 
   /* ナビゲーションのリンクの装飾設定 */
-  #nav-pc>a {
+  #nav-pc > a {
     text-decoration: none;
     margin-left: 20px;
   }
 
-  #nav-pc>a:link {
+  #nav-pc > a:link {
     color: #0d0d0d;
   }
 
-  #nav-pc>a:visited {
+  #nav-pc > a:visited {
     color: #0d0d0d;
   }
 
-  #nav-pc>a:hover {
+  #nav-pc > a:hover {
     color: #0d0d0d;
     text-decoration: underline;
   }
 
-  #nav-pc>a:active {
+  #nav-pc > a:active {
     color: #0d0d0d;
   }
 
-  #menu-sp{
+  #menu-sp {
     display: none;
   }
 
-  #nav-sp{
+  #nav-sp {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
-   /* PC用ナビゲーション非表示 */
-   body{
+  /* PC用ナビゲーション非表示 */
+  body {
     min-width: 375px;
     margin: 0;
-   }
+  }
 
-   #nav-pc {
-     display: none;
-   }
- 
-   /* ハンバーガーメニュー */
-   #menu-sp {
-     float: right;
-     padding: 0;
-     border: none;
-   }
- 
-   /* スマホ用ナビゲーションの表示切替*/
-   /* 初期状態、レイアウトと非表示設定 */
-   #nav-sp {
-     background-color:#ce933e;
-     position: absolute;
-     left: 0;
-     top: 0;
-     height: 100%;
-     width: 100%;
-     display: none;
-     z-index: 100;
-   }
+  #nav-pc {
+    display: none;
+  }
 
-   #nav-sp ul{
-    padding-left: 0;
-   }
+  /* ハンバーガーメニュー */
 
-   #nav-sp li{
-    list-style: none;
-   }
-
-   #close{
-     position: absolute;
-     right: 20px;
-     top: 20px;
-     background-color: transparent;
-     border: none;
-   }
-
-   #logo-sp{
-    margin: 80px 0px, 30px 20px;
-   }
-
-   #nav-sp a{
+  #menu-sp {
     display: block;
-   }
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: none;
+  }
 
-   #nav-sp a:link{
+  /* スマホ用ナビゲーションの表示切替*/
+  /* 初期状態、レイアウトと非表示設定 */
+  #nav-sp {
+    background-color: #ce933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  #nav-sp ul {
+    padding-left: 0px;
+  }
+
+  #nav-sp li {
+    list-style: none;
+  }
+
+  #close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+  }
+
+  #logo-sp {
+    /* margin: 130px 0 30px 20px; */
+    margin: 80px 0 30px 20px;
+  }
+
+  #nav-sp a {
+    display: block;
+    /* margin: 20px 20px 20px 20px; */
+  }
+
+  #nav-sp a:link {
     color: #ffffff;
     text-decoration: none;
-   }
+  }
 
-   #nav-sp a:visited{
+  #nav-sp a:visited {
     color: #ffffff;
-   }
+  }
 
-   #nav-sp a:hover{
+  #nav-sp a:hover {
     color: #ffffff;
     text-decoration: underline;
-   }
-
-   #nav-sp a:active{
-    color: #ffffff;
-   }
-
-   #nav-sp a:active{
-    color: #ffffff;
-   }
-
-   #nav-sp.menu{
-    text-decoration: none;
-    margin: 0px,20px,0px,20px;
-    height:44px;
-    font-size: 16px;
-     background-image: url("images/arrow.png");
-     background-repeat: no-repeat;
-     background-position: right top;
-   }
-
-
-
-
   }
+
+  #nav-sp a:active {
+    color: #ffffff;
+  }
+
+  #nav-sp a:active {
+    color: #ffffff;
+  }
+
+  #nav-sp .menu {
+    text-decoration: none;
+    /* margin: 0px, 20px, 0px, 20px; */
+    margin: 0px 20px 0px 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
